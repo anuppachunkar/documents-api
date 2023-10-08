@@ -1,6 +1,6 @@
 package com.infybuzz.response;
 
-public class PostResponse {
+public class PostResponse extends GenericResonse{
 	
 	private int id;
 	private int userId;

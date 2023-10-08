@@ -74,14 +74,20 @@ public class DocumentController {
 	
 	@GetMapping("/getPost/{id}")
 	public PostResponse getPost(@PathVariable("id") long id) {
+		
+		System.out.println("getPost by ID : "+id);
 		ObjectMapper mapper = new ObjectMapper();
 		PostResponse response = null;
 		try {
 			response = mapper.readValue(postFeignClient.getById(id), PostResponse.class) ;
 		} catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			
+			response = new PostResponse();
+			response.setStatus("Failure");
+			response.setErrorMessage("Exception in getPost API");
 		}
+		response.setMessage("Success");
 		return response;
 		 
 	}
@@ -103,8 +109,9 @@ public class DocumentController {
 		try {
 			response = mapper.readValue(postFeignClient.createPost(request), PostResponse.class) ;
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response = new PostResponse();
+			response.setStatus("E");
+			response.setErrorMessage("Exception in createPost API");
 		}
 		return response;
 	}

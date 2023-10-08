@@ -1,6 +1,6 @@
 package com.infybuzz.response;
 
-public class DocumentResponse {
+public class DocumentResponse extends GenericResonse{
 	
 	private long id;
 
