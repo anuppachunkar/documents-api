@@ -6,7 +6,7 @@ public class DocumentResponse extends GenericResonse{
 
 	private String documentName;
 
-	private String content;
+	private byte[] content;
 
 	public long getId() {
 		return id;
@@ -24,13 +24,15 @@ public class DocumentResponse extends GenericResonse{
 		this.documentName = documentName;
 	}
 
-	public String getContent() {
+	public byte[] getContent() {
 		return content;
 	}
 
-	public void setContent(String content) {
+	public void setContent(byte[] content) {
 		this.content = content;
 	}
+
+
 	
 	
 

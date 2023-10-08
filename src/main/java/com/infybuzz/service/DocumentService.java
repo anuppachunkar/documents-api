@@ -28,7 +28,7 @@ public class DocumentService {
 		System.out.println(" Document saved ");
 		response.setId(document.getId());
 		response.setDocumentName(document.getDocumentName());
-		response.setContent(document.getContent());
+		response.setContent(document.getContent().getBytes());
 		
 		return response;
 	}
@@ -41,7 +41,7 @@ public class DocumentService {
 		
 		response.setId(document.getId());
 		response.setDocumentName(document.getDocumentName());
-		response.setContent(document.getContent());
+		response.setContent(document.getContent().getBytes());
 		
 		return response;
 	}
