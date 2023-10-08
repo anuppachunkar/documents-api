@@ -9,7 +9,7 @@
 		<version>2.4.2</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.infybuzz.cloud</groupId>
+	<groupId>com.qdb.cloud</groupId>
 	<artifactId>documents-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>documents-api</name>

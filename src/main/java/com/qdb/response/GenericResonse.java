@@ -1,4 +1,4 @@
-package com.infybuzz.response;
+package com.qdb.response;
 
 public class GenericResonse {
 	

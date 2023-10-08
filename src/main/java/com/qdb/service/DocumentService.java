@@ -1,12 +1,12 @@
-package com.infybuzz.service;
+package com.qdb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.infybuzz.entity.Document;
-import com.infybuzz.repository.DocumentRepository;
-import com.infybuzz.request.DocumentRequest;
-import com.infybuzz.response.DocumentResponse;
+import com.qdb.entity.Document;
+import com.qdb.repository.DocumentRepository;
+import com.qdb.request.DocumentRequest;
+import com.qdb.response.DocumentResponse;
 
 @Service
 public class DocumentService {

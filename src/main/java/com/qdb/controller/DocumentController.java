@@ -1,4 +1,4 @@
-package com.infybuzz.controller;
+package com.qdb.controller;
 
 import java.nio.charset.StandardCharsets;
 
@@ -15,14 +15,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.infybuzz.feignclients.PostFeignClient;
-import com.infybuzz.request.CommentRequest;
-import com.infybuzz.request.DocumentRequest;
-import com.infybuzz.request.PostRequest;
-import com.infybuzz.response.CommentReponse;
-import com.infybuzz.response.DocumentResponse;
-import com.infybuzz.response.PostResponse;
-import com.infybuzz.service.DocumentService;
+import com.qdb.feignclients.PostFeignClient;
+import com.qdb.request.CommentRequest;
+import com.qdb.request.DocumentRequest;
+import com.qdb.request.PostRequest;
+import com.qdb.response.CommentReponse;
+import com.qdb.response.DocumentResponse;
+import com.qdb.response.PostResponse;
+import com.qdb.service.DocumentService;
 
 @RestController
 @RequestMapping("/api/document")
@@ -73,7 +73,7 @@ public class DocumentController {
 	}
 	
 	@GetMapping("/getPost/{id}")
-	public PostResponse getPost(@PathVariable("id") long id) {
+	public PostResponse viewPost(@PathVariable("id") long id) {
 		
 		System.out.println("getPost by ID : "+id);
 		ObjectMapper mapper = new ObjectMapper();

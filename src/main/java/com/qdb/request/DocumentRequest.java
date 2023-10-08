@@ -1,4 +1,4 @@
-package com.infybuzz.request;
+package com.qdb.request;
 
 public class DocumentRequest {
 

@@ -1,4 +1,4 @@
-package com.infybuzz.feignclients;
+package com.qdb.feignclients;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.infybuzz.request.CommentRequest;
-import com.infybuzz.request.PostRequest;
-import com.infybuzz.response.CommentReponse;
+import com.qdb.request.CommentRequest;
+import com.qdb.request.PostRequest;
+import com.qdb.response.CommentReponse;
 
 
 

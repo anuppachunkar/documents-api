@@ -1,17 +1,11 @@
-package com.infybuzz.response;
+package com.qdb.request;
 
-public class CommentReponse {
-	private int id;
+public class CommentRequest {
+	
 	private int postId;
 	private String name;
 	private String email;
 	private String body;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public int getPostId() {
 		return postId;
 	}

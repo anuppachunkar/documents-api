@@ -1,18 +1,13 @@
-package com.infybuzz.response;
+package com.qdb.request;
 
-public class PostResponse extends GenericResonse{
+public class PostRequest {
 	
-	private int id;
-	private int userId;
+	
 	private int documentId;
 	private String title;
 	private String body;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	private int userId;
+	
 	public int getDocumentId() {
 		return documentId;
 	}
@@ -31,12 +26,20 @@ public class PostResponse extends GenericResonse{
 	public void setBody(String body) {
 		this.body = body;
 	}
+	
+	
 	public int getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
-		this.userId = userId;
+		this.userId = this.documentId;
 	}
+	@Override
+	public String toString() {
+		return "PostRequest [documentId=" + documentId + ", title=" + title + ", body=" + body + ", userId=" + userId
+				+ "]";
+	}
+	
 	
 	
 	
