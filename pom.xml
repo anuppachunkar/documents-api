@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.infybuzz.cloud</groupId>
-	<artifactId>student-service</artifactId>
+	<artifactId>documents-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-service</name>
-	<description>student-service</description>
+	<name>documents-api</name>
+	<description>documents-api</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring.cloud.version>3.0.1</spring.cloud.version>
