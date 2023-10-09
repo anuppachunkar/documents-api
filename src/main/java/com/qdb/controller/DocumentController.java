@@ -63,8 +63,11 @@ public class DocumentController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public void deleteDocument(@PathVariable long id) {
+	public DocumentResponse deleteDocument(@PathVariable long id) {
+		DocumentResponse response = new DocumentResponse();
 		documentService.deleteById(id);
+		response.setMessage("Document deleted successfully");
+		return response;
 	}
 	
 	@GetMapping("/ping")
@@ -125,8 +128,9 @@ public class DocumentController {
 		try {
 			response = mapper.readValue(postFeignClient.createComment(request), CommentReponse.class) ;
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response = new CommentReponse();
+			response.setStatus("E");
+			response.setErrorMessage("Exception in createPost API");
 		}
 		return response;
 	}

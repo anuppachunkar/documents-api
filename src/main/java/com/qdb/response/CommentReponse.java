@@ -1,6 +1,6 @@
 package com.qdb.response;
 
-public class CommentReponse {
+public class CommentReponse extends GenericResonse{
 	private int id;
 	private int postId;
 	private String name;
